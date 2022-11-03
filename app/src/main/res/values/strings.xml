@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FCM_test</string>
+    <string name="msg_token_fmt" translatable="false">토큰 : %s</string>
+</resources>
