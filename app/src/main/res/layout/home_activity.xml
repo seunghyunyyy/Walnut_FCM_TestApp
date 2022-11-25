@@ -5,14 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Test 화면입니다"
-        android:textSize="40dp"/>
+    tools:context=".HomeActivity">
     <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
@@ -21,17 +14,18 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/signin"
+            android:id="@+id/messageList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="로그인"/>
+            android:text="알림내역"/>
+
 
         <Button
-            android:id="@+id/signup"
+            android:id="@+id/home_sign_out_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="회원가입"/>
+            android:text="로그아웃"/>
+
 
     </LinearLayout>
-
 </LinearLayout>
