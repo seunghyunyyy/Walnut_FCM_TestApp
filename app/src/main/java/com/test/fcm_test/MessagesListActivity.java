@@ -9,6 +9,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -23,11 +25,12 @@ public class MessagesListActivity extends AppCompatActivity {
 
     public static MessagesListActivity messagesListActivity;
 
-    final String url = "http://192.168.50.190:8080/push/v1";
+    final String url = "http://192.168.50.192:8080/push/v1";
     ArrayList<MessageItem> messageItems;
     ArrayList<MessageData> messageData;
     String messages;
 
+    //RecyclerViewAdapter adapter;
 
 
     @Override
@@ -57,7 +60,12 @@ public class MessagesListActivity extends AppCompatActivity {
             Long MSG = getIntent.getLongExtra("msgId", 0);
             messageItems.remove(messageData.indexOf(MSG));
         }
-*/
+*//*
+        RecyclerView recyclerView = findViewById(R.id.messages_listview);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        adapter = new RecyclerViewAdapter();
+        recyclerView.setAdapter(adapter);*/
         ListView listView = (ListView) findViewById(R.id.messages_listview);
         MessagesAdapter adapter = new MessagesAdapter(this, messageItems);
 

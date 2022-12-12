@@ -16,7 +16,7 @@ import com.google.gson.JsonParser;
 
 public class MessageInfoActivity extends AppCompatActivity {
     MessagesListActivity messagesListActivity = (MessagesListActivity) MessagesListActivity.messagesListActivity;
-    final String url = "http://192.168.50.190:8080/push/v1";
+    final String url = "http://192.168.50.192:8080/push/v1";
     MessageItem messageItems;
     MessageData messageData;
     String messagesData;

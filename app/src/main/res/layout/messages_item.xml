@@ -44,4 +44,5 @@
                 android:text="토큰 ID : 256" />
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
